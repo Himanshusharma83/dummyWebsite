@@ -3,8 +3,22 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo-min.png";
 import Button from "../pages/Button";
 import NavLinks from "./NavLinks";
+import { LogoutOutlined } from "@ant-design/icons";
+import { useAuth } from "../../context/AuthContext";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+
+
+  const logout  = useAuth(); 
+
+  const handleLogout = () => {
+    // Call the logout method when the logout button is clicked
+    logout();
+    // Redirect the user to the login page after logout
+    window.location.href = '/';
+  };
+
   return (
     <nav className="bg-[#222] text-[#fff]">
       <div className="flex items-center font-medium justify-around">
@@ -26,8 +40,9 @@ const Navbar = () => {
           <NavLinks />
         </ul>
         <div className="md:block hidden">
-          <Button />
+          {/* <Button /> */}
         </div>
+          <LogoutOutlined style={{fontSize:'2rem',cursor:'pointer'}} onClick={handleLogout} />
         {/* Mobile nav */}
         <ul
           className={`
