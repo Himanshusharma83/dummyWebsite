@@ -17,25 +17,16 @@ Tailwind Css
 ### Project Sturcture
 ![Sample Image](screenshot_for_readme/Screenshot%20(67).png)
 
+### Running the project
 
+1. Clone the repository:
+git clone https://github.com/yourusername/frontend-development-challenge.git
 
-first clone or downlod the project by clicing on the big green button code button Code
+2. Install dependencies:
+npm install 
 
-First install the dependencies using this command
- `npm install`
+3. Run the Project by 
+npm run dev
 
-and after this run the project by using this command
-`npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-
-
-
-
-### `npm test`
-
-
-### `npm run build`
+4. Open your browser and visit http://localhost:3000 to view the application.
 
