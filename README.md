@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the solution for the Frontend Development Challenge. The challenge aims to evaluate candidates' proficiency in JavaScript, API interaction, authentication, and frontend development skills. Candidates were required to work with APIs to perform CRUD operations, manage authorization, implement filter, sort, search, pagination functionalities, and ensure data persistence when the page is reloaded. The solution includes a login page, a list page with filtering, sorting, searching, and pagination functionalities, forms for adding and editing items, and a detailed item view page.
 
 ## Available Scripts
 
