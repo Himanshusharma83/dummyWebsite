@@ -8,7 +8,13 @@ export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const login = () => setIsLoggedIn(true);
-  const logout = () => setIsLoggedIn(false);
+
+  const logout = () => {
+    
+    localStorage.removeItem('token');
+   
+    setIsLoggedIn(false);
+  };
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, login, logout }}>

@@ -5,12 +5,10 @@ import Button from "../pages/Button";
 import NavLinks from "./NavLinks";
 import { LogoutOutlined } from "@ant-design/icons";
 import { useAuth } from "../../context/AuthContext";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
-
-
-  const logout  = useAuth(); 
+  const { logout } = useAuth(); // Destructure the logout function from useAuth
 
   const handleLogout = () => {
     // Call the logout method when the logout button is clicked
@@ -42,7 +40,7 @@ const Navbar = () => {
         <div className="md:block hidden">
           {/* <Button /> */}
         </div>
-          <LogoutOutlined style={{fontSize:'2rem',cursor:'pointer'}} onClick={handleLogout} />
+        <LogoutOutlined style={{fontSize:'2rem',cursor:'pointer'}} onClick={handleLogout} />
         {/* Mobile nav */}
         <ul
           className={`
