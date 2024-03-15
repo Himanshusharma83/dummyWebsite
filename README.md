@@ -4,6 +4,15 @@ This repository contains the solution for the Frontend Development Challenge. Th
 
 ## Available Scripts
 
+### Technologies Used
+React.js
+React Router
+Ant Design
+JavaScript
+HTML
+CSS
+
+
 first clone or downlod the project by clicing on the big green button code button Code
 
 First install the dependencies using this command
