@@ -30,3 +30,19 @@ npm run dev
 
 4. Open your browser and visit http://localhost:3000 to view the application.
 
+
+
+### Implementation Overview
+The application is built using React.js for frontend development.
+React Router is used for routing between different pages.
+Ant Design is used for UI components to ensure a visually appealing experience.
+API interactions are managed using the Axios library.
+User authentication is implemented with token-based authentication.
+The application provides functionalities for filtering, sorting, searching, and pagination.
+Data persistence is achieved using local storage to store user preferences such as filters, searches, and pagination.
+
+### Challenges Faced
+
+Ensuring data persistence across sessions required careful management of local storage.
+Implementing error handling for form submissions and displaying relevant messages in the UI required thorough testing and debugging.
+
